@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(beanplant.jpg);
+  background-size: cover;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #f0ead2;
+  background-color: #081c15d0;
+}
+
+.contact .content p {
+  font-size: 22px;
+  font-weight: 100;
+  padding: 10px 20px;
+  color: #aaa79c;
+  background-color: #081c15d0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #081c15d0;
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  color: #f0ead2;
+  /* background-color: #081c15d0; */
+  padding-left: 40px;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 50px;
+  height: 50px;
+  background: #9e2a2cc7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #aaa79c;
+}
+
+.container .contactInfo .box .text {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #f2cc8f;
+  display: block;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 200;
+  color: #f0ead2b9;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contactForm {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.contactForm h2 {
+  font-size: 28px;
+  color: #cc3336;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  font-weight: 200;
+  color: #f0ead2;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  background-color: #aaa79c62;
+  outline: none;
+  resize: none;
+  color: #f2cc8f;
+}
+
+.contactForm .inputBox textarea {
+  width: 80%;
+  font-size: 14px;
+  border: none;
+  background-color: #aaa79c62;
+  outline: none;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #f2cc8f;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 80px;
+  background: #c0383ae5;
+  color: #f2cc8f;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 18px;
+}
+
+/* Styling for Home Button */
+.exit {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 1.9rem;
+  top: 90%;
+  transform: translateY(0px);
+  color: #f0ead2b9;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-left: 20px;
+  padding: 0.2rem 0.9rem;
+  background-color: #081c15d0;
+  outline: 1px solid darkgreen;
+}
+.exit:hover {
+  color: #f0ead2;
+  background-color: rgba(0, 50, 0, 0.4);
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 50px;
+    padding-left: 0px;
+  }
+
+  .container .contactInfo {
+    width: 80%;
+  }
+
+  .container .contactInfo,
+  .contactForm {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  .exit {
+    position: relative;
+    font-size: 1.5rem;
+    top: 70%;
+    transform: translateY(10px);
+  }
+  .contactForm h2 {
+    text-align: center;
+  }
+}
