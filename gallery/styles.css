@@ -121,3 +121,32 @@ body {
 .carousel-button.next {
   right: 1rem;
 }
+
+@media (max-width: 798px) {
+  .exit {
+    position: fixed;
+    z-index: 2;
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.3rem;
+  }
+  .carousel-button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .exit {
+    position: fixed;
+    z-index: 2;
+    font-size: 1.4rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .carousel-button {
+    font-size: 1.8rem;
+  }
+}
+
