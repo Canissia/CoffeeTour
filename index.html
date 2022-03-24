@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Site</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Colombia</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="movies/pour.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Coffee Tour</h2>
+            <h3>Discover Colombia's best coffee tour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum repudiandae ex unde porro iure doloribus quas? Nemo, vitae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam optio commodi velit aut, cum placeat, tenetur voluptate nesciunt alias ea, porro deserunt eaque ducimus harum obcaecati! Assumenda unde soluta sed!</p>
+        </div>
+        
+        <ul class="social">
+            <li>
+                <a href="#"><img src="social/facebook.png" alt="" /></a>
+            </li>
+            <li>
+                <a href="#"></a><img src="social/instagram.png" alt="" /></a>
+            </li>
+            <li>
+                <a href="#"></a><img src="social/twitter.png" alt="" /></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about/index.html">About Us</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="contact/index.html">Contact Us</a></li>
+    </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
+
