@@ -193,3 +193,44 @@
     font-size: 1.5em;
   }
 }
+
+@media (max-width: 290px) {
+  .showcase,
+  .showcase header {
+    padding: 20px;
+  }
+
+  .text h2 {
+    font-size: 2.5em;
+  }
+
+  .text h3 {
+    font-size: 1em;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: #b08968;
+  }
+}
+
+@media (max-height: 430px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: #b08968;
+  }
+}
