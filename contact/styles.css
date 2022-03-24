@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(beanplant.jpg);
+  background: url(https://images.unsplash.com/photo-1552346989-e069318e20a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwcGxhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
   background-size: cover;
 }
 
@@ -205,5 +205,34 @@
   }
   .contactForm h2 {
     text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .exit {
+    position: relative;
+    font-size: 1.1rem;
+    top: 70%;
+    transform: translateY(10px);
+  }
+  .contactForm h2 {
+    text-align: center;
+  }
+
+  .container .contactInfo {
+    font-size: 0.7rem;
+  }
+
+  .container .contactInfo .box {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 0px;
+    font-size: 0.4px;
+  }
+
+  .contact .content p {
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 10px;
   }
 }
